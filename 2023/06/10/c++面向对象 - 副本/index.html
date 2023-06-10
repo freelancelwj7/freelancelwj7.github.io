@@ -11,7 +11,12 @@
 <meta name="apple-mobile-web-app-title" content="Kim&#39;s Blog">
 <link rel="bookmark" href="/img/logo.jpg">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/logo.jpg">
-<meta name="description" content="Stay Hungry, Stay Foolish!">
+<meta name="description" content="&lt;h1 id=&#34;1-内存分区模型&#34;&gt;&lt;a href=&#34;#1-内存分区模型&#34; class=&#34;headerlink&#34; title=&#34;1 内存分区模型&#34;&gt;&lt;/a&gt;1 内存分区模型&lt;/h1&gt;&lt;p&gt;C++ 程序在执行时，将内存大方向划分为 4 个区域&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码区：存放函数体​的二进制代码，由操作系统进行管理&lt;/li&gt;
+&lt;li&gt;全局区：存放全局变量和静态变量以及常量（字符串常量、const修饰的常量）&lt;/li&gt;
+&lt;li&gt;栈区：由编译器自动分配释放，存放函数的参数值，局部变量等&lt;/li&gt;
+&lt;li&gt;堆区：由程序员分配和释放，若程序员不释放，程序结束时由操作系统回收">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -401,11 +406,6 @@
                 <time datetime="2023-06-10T11:48:28+08:00"></time>
             </span>
             
-                <span class="post-meta-date" title="更新于">
-                    <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-06-10T12:10:46+08:00"></time>
-                </span>
-            
             
                 <span class="post-meta-position" title="作者IP归属地为青岛">
                     <i class="fas fa-location-dot post-meta-icon"></i>
@@ -456,7 +456,7 @@
 <li>代码区：存放函数体​的二进制代码，由操作系统进行管理</li>
 <li>全局区：存放全局变量和静态变量以及常量（字符串常量、const修饰的常量）</li>
 <li>栈区：由编译器自动分配释放，存放函数的参数值，局部变量等</li>
-<li>堆区：由程序员分配和释放，若程序员不释放，程序结束时由操作系统回收</li>
+<li>堆区：由程序员分配和释放，若程序员不释放，程序结束时由操作系统回收<span id="more"></span></li>
 </ul>
 <h2 id="1-1-程序运行前"><a href="#1-1-程序运行前" class="headerlink" title="1.1 程序运行前"></a>1.1 程序运行前</h2><p>在程序编译后，生成了 exe 可执行程序，未执行该程序前分为两个区域：</p>
 <p><strong>代码区：</strong></p>
@@ -1152,18 +1152,18 @@
         </div>
         <div class="share-main">
             <div class="share-main-all">
-                <div id="qrcode" title="http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/">
+                <div id="qrcode" title="http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/">
                 </div>
                 <div class="reward-dec">使用手机访问这篇文章</div>
             </div>
         </div>
         <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/");
+            new QRCode(document.getElementById("qrcode"), "http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/");
         </script>
     </div>
 </div>
                 <div class="share-link weibo"><a class="share-button" target="_blank"
-    href="https://service.weibo.com/share/share.php?title=c++ 面向对象&amp;url=http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/&amp;pic=/img/cpplogo.jpg"
+    href="https://service.weibo.com/share/share.php?title=c++ 面向对象&amp;url=http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/&amp;pic=/img/cpplogo.jpg"
     title="分享到微博" rel="noopener external nofollow noreferrer noopener">
     <i class="fab fa-weibo" style="font-size:22px"></i>
 </a>
@@ -1203,7 +1203,7 @@
     </div>
     <div class="post-copyright__type">
         <span class="post-copyright-info" id="post-copyright-url">
-            <a href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/">http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/</a>
+            <a href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/">http://example.com/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/</a>
         </span>
         <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
             <i class="fas fa-paste copy-btn"></i>
@@ -1309,18 +1309,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/" title="c++ 面向对象">
+                <a class="thumbnail" href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/" title="c++ 面向对象">
                     <img
                         alt="c++ 面向对象"
                         src="/img/cpplogo.jpg">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/">
+                        <a class="article-recent_post_categories" href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/">
                             c++
                         </a>
                     
-                    <a class="title" href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC%20(2)/" title="c++ 面向对象">
+                    <a class="title" href="/2023/06/10/c++%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%20-%20%E5%89%AF%E6%9C%AC/" title="c++ 面向对象">
                         c++ 面向对象
                     </a>
                 </div>
@@ -1337,7 +1337,7 @@
                 <footer id="footer">
                     <div id="footer_deal">
     
-    <img class="footer_mini_logo" src="/img/avatar.webp"
+    <img class="footer_mini_logo" src="/img/logo.jpg"
         title="返回顶部" onclick="acrylic.toTop()">
     
 </div>    
@@ -1386,6 +1386,8 @@
 
 <div id="js-pjax">
     
+    
+        <script async src="https://npm.elemecdn.com/penndu@1.0.0/bsz.js"></script>
      
 </div>
 
@@ -1485,4 +1487,4 @@
     
     </body>
 </html>
-<script>const posts=["2023/06/10/c++面向对象/","2023/06/10/c++面向对象 - 副本 (2)/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
+<script>const posts=["2023/06/10/c++面向对象/","2023/06/10/c++面向对象 - 副本/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
